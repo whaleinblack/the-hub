@@ -34,4 +34,3 @@ internal static class CodexLauncher
             uri => Process.Start(new ProcessStartInfo(uri) { UseShellExecute = true }));
     }
 }
-

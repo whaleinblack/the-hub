@@ -10,4 +10,3 @@ using System.Windows.Automation;
 using System.Windows.Forms;
 
 internal interface IQuickFeature : IDisposable { ToolStripItem MenuItem { get; } }
-

@@ -45,4 +45,3 @@ internal sealed class SearchShortcut : IQuickFeature
     }
     public void Dispose() { if (hook != IntPtr.Zero) { Native.UnhookWindowsHookEx(hook); hook = IntPtr.Zero; } }
 }
-

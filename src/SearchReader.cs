@@ -49,4 +49,3 @@ internal static class SearchReader
         return value;
     }
 }
-
