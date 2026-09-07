@@ -1,0 +1,10 @@
+bin/
+dist/
+*.log
+thread-id.txt
+rules-path.txt
+codex-path.txt
+test-results.txt
+.vs/
+*.user
+*.suo

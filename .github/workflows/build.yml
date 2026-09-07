@@ -1,0 +1,19 @@
+name: Windows build
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and test
+        shell: powershell
+        run: ./test.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: the-hub-windows-x64
+          path: |
+            bin/Hub.exe
+            bin/visual-preview.png
+            bin/test-results.txt
